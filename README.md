@@ -1,22 +1,31 @@
-This repository provides a web interface to detect scratches in sensor images using UNET.
+### Sensor Image Scratch Detection Web Interface
+This repository provides a web interface for detecting scratches in sensor images using a UNET-based model. This project is currently hosted by CERN, and some files are confidential due to project sensitivity.
 
-Install the requirements using following command:
-pip install -r requirements.txt
+### Author
+# Abhinav Raj Gupta
 
-The steps to run the web interface can be found below:
+### Installation
+# To install the required dependencies, use the following command:
+     pip install -r requirements.txt
+# Setup and Usage
+Follow these steps to set up and run the web interface:
 
-Clone this repository or download the zip file.
+# 1. Clone the repository or download the ZIP file:
+      git clone <repository-url>
+# 2. Navigate to the project directory:
+      cd <project-directory>
+# 3. Run the application:
+      flask run
+# 4. Access the web interface:
+Open your local web browser and navigate to http://127.0.0.1:5000.
+# 5. Upload and Analyze Images:
+  - Use the Upload button to select and upload images.
+  - Uploaded images are saved in instance/upload/, organized by date and time.
+  - The UNET model processes the images, and annotated results are stored in static/, also organized by date and time.
+# 6. View and Download Results:
+  - Annotated images are displayed on the web interface.
+  - Use the Download Label Files button to download the labels as a ZIP file.
+# 7. Filter Options:
+  - A dropdown menu is available to filter images as needed.
 
-Cd to the extracted zip folder or downloaded git repository.
-
-Run the command flask run. flask run
-
-Go to the website http://127.0.0.1:5000 on your local web browser. You will be directed toward the web interface.
-
-Select the files and upload them using Upload Button.
-
-After clicking the Upload Button, the images will be stored in instance/upload/ with the current date and time folder. The Yolo model will be implemented on the images and the result annotated images will be stored on /static/ folder with the current date and time folder. The annotated images will be displayed on the web interface.
-
-The resulting image labels can be downloaded with the "Download Label Files" Button. The downloaded file will be in the form of zip.
-
-You can filter the images with the drop-down button.
+### Note: This repository does not include certain project files due to their confidentiality, as this is part of an official CERN project.
